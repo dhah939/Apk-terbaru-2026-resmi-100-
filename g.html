@@ -1,0 +1,135 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muahhhhhhh</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #000000, #1e3a8a, #facc15, #dc2626);
+  background-size: 400% 400%;
+  animation: bgMove 15s ease infinite;
+  color: white;
+  overflow: hidden;
+}
+
+@keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+header {
+  text-align: center;
+  padding: 25px;
+  background: rgba(0,0,0,0.6);
+  border-bottom: 4px solid white;
+}
+
+header h1 {
+  color: #facc15;
+  font-size: 2.3rem;
+  text-shadow: 2px 2px 6px black;
+}
+
+header p {
+  margin-top: 8px;
+  color: #e5e7eb;
+}
+
+.container {
+  position: relative;
+  height: calc(100vh - 150px);
+  padding: 30px;
+}
+
+/* TEMPAT / KOTAK TEKS */
+.text-box {
+  position: absolute;
+  padding: 15px 30px;
+  border-radius: 15px;
+  border: 3px solid white;
+  background: rgba(0,0,0,0.55);
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+  white-space: nowrap;
+  animation: moveText linear infinite;
+}
+
+.text-box h2 {
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 5px black;
+}
+
+.box1 { top: 15%; color: #3b82f6; animation-duration: 10s; }
+.box2 { top: 35%; color: #facc15; animation-duration: 14s; }
+.box3 { top: 55%; color: #ef4444; animation-duration: 12s; }
+.box4 { top: 75%; color: #ffffff; animation-duration: 16s; }
+
+@keyframes moveText {
+  from { left: -60%; }
+  to { left: 120%; }
+}
+
+/* DEKORASI AGAR TIDAK KOSONG */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.25;
+  animation: float 8s ease-in-out infinite;
+}
+
+.blue { width: 140px; height: 140px; background: #2563eb; top: 10%; left: 5%; }
+.yellow { width: 200px; height: 200px; background: #facc15; bottom: 10%; right: 8%; animation-delay: 2s; }
+.red { width: 100px; height: 100px; background: #dc2626; top: 50%; left: 70%; animation-delay: 4s; }
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-25px); }
+  100% { transform: translateY(0); }
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: rgba(0,0,0,0.7);
+  border-top: 3px solid white;
+  font-size: 0.9rem;
+}
+
+  </style>
+</head>
+<body>  <header>
+    <h1>Sayaaaaaaaaaaaaaaaaaaaaaaaaaa</h1>
+    <p>Sayaaaaaaaaaaaaaaaaaaaaa</p>
+  </header>  <div class="container"><!-- KOTAK TEKS BERGERAK -->
+<div class="text-box box1">
+  <h2>Sayaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h2>
+</div>
+
+<div class="text-box box2">
+  <h2>Sayaaaaaaaaaaaaaaaaaa
+  ahhhhhhhhhhhh<h2>
+</div>
+
+<div class="text-box box3">
+  <h2>Sayyyaaaaaaaaaaaaaaa</h2>
+</div>
+
+<div class="text-box box4">
+  <h2>Sayaaaaaaaaahhhhhhh</h2>
+</div>
+
+<!-- DEKORASI -->
+<div class="circle blue"></div>
+<div class="circle yellow"></div>
+<div class="circle red"></div>
+
+  </div>  <footer>
+    muahhhhhhh
+  </footer></body>
+</html>
